@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="مختبر تفاعلي لتعلم أمثلة JavaScript">
+  <title>مختبر أمثلة JavaScript</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <button id="mobileMenu" class="icon-btn mobile-only" aria-label="فتح القائمة">☰</button>
+      <div class="brand-mark">JS</div>
+      <div class="brand-copy"><strong>مختبر JavaScript</strong><span>أمثلة تفاعلية للتعلّم والتجربة</span></div>
+      <div class="top-actions"><span class="status-dot"></span><span>يعمل محليًا</span></div>
+    </header>
+
+    <div class="workspace">
+      <aside id="sidebar" class="sidebar">
+        <div class="sidebar-heading">
+          <div><strong>مكتبة الأمثلة</strong><small>الصفحات 1–10</small></div>
+          <button id="collapseSidebar" class="icon-btn desktop-only" aria-label="طي القائمة">⇥</button>
+        </div>
+        <label class="search-wrap">
+          <span>⌕</span>
+          <input id="searchInput" type="search" placeholder="ابحث عن مثال..." autocomplete="off">
+        </label>
+        <nav id="exampleNav" aria-label="قائمة الأمثلة"></nav>
+        <div class="sidebar-foot"><span class="status-dot"></span> 10 صفحات · مختبر تعليمي</div>
+      </aside>
+
+      <main class="main-content">
+        <div class="breadcrumb"><span>المكتبة</span><span>›</span><span id="crumbCategory">البداية</span><span>›</span><strong id="crumbTitle">أول تجربة JavaScript</strong></div>
+        <section class="welcome-strip">
+          <div><span class="eyebrow">INTERACTIVE PLAYGROUND</span><h1 id="pageHeading">أول تجربة JavaScript</h1><p id="pageDescription">غيّر المدخلات ثم نفّذ المثال لترى النتيجة في مساحة المعاينة.</p></div>
+          <div class="hero-symbol">&lt;/&gt;</div>
+        </section>
+
+        <section class="example-card">
+          <div class="card-heading"><div><span class="section-kicker">EXAMPLE WORKSPACE</span><h2 id="exampleTitle">أول تجربة JavaScript</h2></div><span id="exampleNumber" class="number-pill">01</span></div>
+          <p id="explanation" class="explanation"></p>
+          <div id="controls" class="controls"></div>
+          <div class="button-row">
+            <button id="runButton" class="primary-btn">▶ تنفيذ المثال</button>
+            <button id="resetButton" class="secondary-btn">↺ إعادة ضبط</button>
+          </div>
+          <div id="errorBox" class="error-box" hidden></div>
+          <div class="output-heading"><span class="live-dot"></span><strong>النتيجة المعروضة</strong><span class="output-hint">HTML Preview</span></div>
+          <div id="output" class="output-panel"><div class="empty-state"><span>↳</span><p>نفّذ المثال لعرض النتيجة هنا.</p></div></div>
+          <details class="code-details">
+            <summary>عرض كود المثال الكامل (HTML + JavaScript)</summary>
+            <pre><code id="sourceCode"></code></pre>
+          </details>
+          <div class="source-row"><span>الموضوع: <strong id="sourceTopic">Getting Started</strong></span><a id="sourceLink" href="https://harmash.com/tutorials/javascript/getting-started" target="_blank" rel="noopener noreferrer">فتح صفحة هرمش ↗</a></div>
+        </section>
+        <footer class="page-footer">واجهة تعليمية مستقلة مستوحاة من أسلوب مختبرات البرمجة. المحتوى الأصلي ومراجع الدروس تعود إلى <a href="https://harmash.com/" target="_blank" rel="noopener noreferrer">هرمش</a>؛ المشروع غير تابع رسميًا للموقع.</footer>
+      </main>
+    </div>
+  </div>
+  <script src="assets/js/examples.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
